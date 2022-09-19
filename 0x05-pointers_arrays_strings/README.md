@@ -1,7 +1,7 @@
-#0x05. C - Pointers, arrays and strings
+# 0x05. C - Pointers, arrays and strings
 (c) Solomon Ferede
-##Requirements
-###General
+## Requirements
+### General
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 - All your files should end with a new line
@@ -16,7 +16,7 @@
 - The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
 - Don’t forget to push your header file
 
-##Files included in this project
+## Files included in this project
 - README.md - description about the project 
 - 0-reset_to_98.c - function that takes a pointer to an int as parameter and updates the value it points to to 98
 - 1-swap.c -  function that swaps the values of two integers.
