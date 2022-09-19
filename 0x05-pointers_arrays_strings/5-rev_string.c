@@ -10,8 +10,8 @@ void rev_string(char *s)
 	int i;
 	int j;
 
-	reversed = s;
-	for (i = strlen(s) - 1, j = 0; i >= 0; i--, j++)
+	*reversed = *s;
+	for (i = strlen(reversed) - 1, j = 0; i >= 0; i--, j++)
 	{
 		*(s + j) = *(reversed + i);
 	}
