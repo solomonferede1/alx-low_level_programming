@@ -9,8 +9,9 @@
 
 #include<stdio.h>
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	printf("%d\n", argc);
+	if (*argv != NULL)
+		printf("%d\n", argc);
 	return (0);
 }
