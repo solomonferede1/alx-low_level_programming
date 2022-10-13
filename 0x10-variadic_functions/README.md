@@ -1,6 +1,7 @@
   # 0x10-VARIADIC_FUNCTIONS
   **By solomon Ferede - Software engineer at alx**
-  *Project on low level programming - c at Holberton school
+  
+  * Project on low level programming - c at Holberton school
   
   ## Files included in this project are:
 - File **0-sum_them_all.c** is a function that returns the sum of all its parameters.
