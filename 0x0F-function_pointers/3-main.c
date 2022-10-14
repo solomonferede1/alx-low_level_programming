@@ -18,6 +18,11 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
+	if (len(argv[2]) != 2)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	funn = get_op_func(argv[2]);
 	if (funn == NULL)
 	{
