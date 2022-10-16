@@ -39,6 +39,8 @@ void print_all(const char * const format, ...)
 				printf("%s", string);
 			}
 				break;
+			case '\0':
+				printf("(nil)");
 			default:
 				break;
 		}
