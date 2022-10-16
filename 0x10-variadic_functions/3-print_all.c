@@ -8,17 +8,12 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i, j;
+	unsigned int i, len;
 	va_list ph;
-	unsigned int len, af_len;
 	char *string;
-	char *af;
 
-	af = "cifs";
 	len = strlen(format);
-	af_len = strlen(af);
 	va_start(ph, format);
-
 	i = 0;
 	while (i < len && format != NULL)
 	{
@@ -47,17 +42,33 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		j = 0;
-		while (j < af_len)
-		{
-			if (format[i] == af[j] && i < len - 1)
-			{
-				printf(", ");
-				break;
-			}
-			j++;
-		}
+		comma(format[i], len, i);
 		i++;
 	}
 	printf("\n");
+}
+
+/**
+ * comma - prints comma
+ * @format1: character to to see if in the allowed format list
+ * @len: length of format
+ * @i: i
+ */
+void comma(char format1, unsigned int len, unsigned int i)
+{
+	unsigned int j, af_len;
+	char *af;
+
+	af = "cfis";
+	af_len = strlen(af);
+	j = 0;
+	while (j < af_len)
+	{
+		if (format1 == af[j] && i < len - 1)
+		{
+			printf(", ");
+			break;
+		}
+	j++;
+	}
 }
