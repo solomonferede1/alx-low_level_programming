@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 	va_start(ph, format);
 
 	i = 0;
-	while (i < len)
+	while (i < len && format != NULL)
 	{
 		switch (format[i])
 		{
@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 				string = va_arg(ph, char *);
 				if (string == NULL)
 				{
-					printf("nil");
+					printf("(nil)");
 					break;
 				}
 				printf("%s", string);
