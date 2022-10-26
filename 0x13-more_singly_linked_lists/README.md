@@ -1,6 +1,7 @@
 # 0x13-more_singly_linked_lists
 **```C``` ```Data stracture```**
-*** By Solomon Ferede - Software engineer at ALX***
+
+***By Solomon Ferede - Software engineer at ALX***
 
 ## Files included in this project 
 - File 0-print_listint.c is a function that prints all the elements of a listint_t list.
