@@ -1,5 +1,5 @@
 # 0x15. C - File I/O
-```**C**``` ```**Syscall**```
+```C``` ```Syscall```
 
 **By Solomon Ferede**
 ***Project on C programming at Holberton school of silcon valley***
