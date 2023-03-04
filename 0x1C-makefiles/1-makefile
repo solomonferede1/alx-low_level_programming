@@ -1,6 +1,6 @@
 # Defining a compiler
 CC = gcc
-src = *.c
+SRC = main.c school.c -o school
 
 all:
-	$(CC) $(src)
+	$(CC) $(SRC)
