@@ -1,0 +1,6 @@
+# Defining a compiler
+CC = gcc
+src = *.c
+
+all:
+	$(CC) src
