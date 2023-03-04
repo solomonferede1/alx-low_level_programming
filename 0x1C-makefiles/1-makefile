@@ -3,4 +3,4 @@ CC = gcc
 src = *.c
 
 all:
-	$(CC) src
+	$(CC) $(src)
