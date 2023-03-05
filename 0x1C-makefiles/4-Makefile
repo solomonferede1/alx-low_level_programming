@@ -1,11 +1,9 @@
-# Defining a compiler
 CC = gcc
-# Flags
-CFLAGS = Wall -Werror -Wextra -pedantic
-SRC = main.c school.c
+SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
-NAME = school
+NAME = holberton
 RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
@@ -13,5 +11,4 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 fclean: clean oclean
-	$(RM) *.swp *~ school $(OBJ)
-re: oclean clean
+re: oclean all
