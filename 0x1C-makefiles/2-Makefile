@@ -1,8 +1,7 @@
 # Defining a compiler
 CC = gcc
 SRC = main.c school.c
-NAME = "school"
+OBJ = $(SRC:.c=.o)
+NAME = school
 all: $(OBJ)
-	$(CC) $(SRC) -o $(NAME)
-OBJ: $(SRC)
-	$(CC) $(SRC) -o OBJ
+	$(CC) $(OBJ) -o $(NAME)
