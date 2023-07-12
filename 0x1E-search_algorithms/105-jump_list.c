@@ -12,6 +12,9 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	size_t i, step = sqrt(size);
 	listint_t *left = list, *right = list;
 
+	if (list == NULL)
+		return (NULL);
+	
 	while (right != NULL && right->n < value)
 	{
 		i = 0;
